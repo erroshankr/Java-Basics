@@ -20,7 +20,8 @@ Topics included:
 14. Internationalization
 15. Coding Practices
 16. Threading & Concurrency (Basics)
-17. End to End Project Implementation
+17. Memory Management
+18. End to End Web-App Implementation
 
 
 Happy Learning !!
