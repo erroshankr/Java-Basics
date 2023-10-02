@@ -70,4 +70,8 @@ package com.java.inheritance;
         this.printDetails();
         printDetails();
     }
+
+    public void totalDistanceCovered(int speed){
+        System.out.println("Total distance travelled by Car is : " + speed);
+    }
 }

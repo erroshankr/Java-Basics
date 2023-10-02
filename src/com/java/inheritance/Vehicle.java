@@ -8,7 +8,7 @@ public class Vehicle {  // If a class doesn't explicitely extends any class, it 
     String color ;
     long engineID ;
 
-    // return-type + method-name(arguments.....) : arguements can be zero or more
+    // return-type + method-name(arguments.....) : arguments can be zero or more
     public void printDetails(){ //signature: return type, access specifier, no of parameter, parameter sequence
         System.out.println("Inside printDetails of Vehicle class");
     }
@@ -47,4 +47,6 @@ public class Vehicle {  // If a class doesn't explicitely extends any class, it 
     }
 
     // this: refers to object of current class, used to access or refer variables, methods & constructors of current class.
+
+
 }

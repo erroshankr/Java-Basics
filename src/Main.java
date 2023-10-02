@@ -55,16 +55,21 @@ public class Main {
         a1.findSpeed(10,"alto-vx");*/
 
         // instanceOf  : to check if an object is instance of a particular class
+/*
 
         Alto a1 = new Alto();
         Car c1 = new Alto();
         Vehicle v1 = new Alto();
         Vehicle v2 = new Car();
+*/
 
+        // Alto extends CAR
+        // Car extends Vehicle
+        // Alto extends Vehicle also
     //    boolean res = v1 instanceof Car;
     //    boolean res = v2 instanceof Car;
-        boolean res = v2 instanceof Alto;
-        System.out.println(res);
+   /*     boolean res = v2 instanceof Alto;
+        System.out.println(res);*/
 
        /* Object[] arr = {a1,c1,v1,v2};
         for (Object obj: arr) {
@@ -75,7 +80,31 @@ public class Main {
             }
         }*/
 
+      /* Vehicle v1 = new Vehicle();
+       v1.totalDistanceCovered(5);*/
 
+ //     Vehicle v1 = new Car(); // variables/methods invoked with the reference must be accessible from the reference Class
+//    v1.totalDistanceCovered(5); // Invalid operation-> Vehicle doesnt contain totalDistanceCovered() method
+/*
+      Car c1 = new Alto();
+      c1.totalDistanceCovered(10); // Valid bcoz Car contains totalDistanceCovered() method.
+
+       Vehicle v2 = new Alto();
+    //   v2.totalDistanceCovered();  // Invalid becoz reference class vehicle doesnt contain totalDistanceCovered() method.
+
+       Alto a1 = new Alto();
+       a1.totalDistanceCovered(15); // Valid bcoz although totalDistanceCovered method is not directly present in Alto class but present in its parent
+                                           // class and hence is accessible for Alto class
+ */
+
+      Car c1   = new Alto();  // Car is superclass of Alto, Vehicle si superclass of Car.
+      c1.printDetails();  // calls printDetails method of Alto class : Run time Polymorphism --> bcoz actual method call is decided during runtime.
+
+      Vehicle v1 = new Car();
+      Vehicle v2 = new Alto();
+
+      v2.printDetails(); // Runtime Polymorphism.--> calls printDetails method of alto class.
+      v1.printDetails(); // Runtime Polymorphism.--> calls printDetails method of car class.
     }
 
 }
