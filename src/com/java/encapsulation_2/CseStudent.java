@@ -38,4 +38,10 @@ public class CseStudent extends Student {
         System.out.println("Name: " + s1.getName());
         System.out.println("ID: " + s1.id);
     }*/
+
+
+    public static void main(String[] args) {
+        String[] test = new String[4];
+        System.out.println("inside CseStudent Main");
+    }
 }

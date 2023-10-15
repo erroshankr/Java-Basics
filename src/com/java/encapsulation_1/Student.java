@@ -47,4 +47,10 @@ package com.java.encapsulation_1;
         System.out.println("Gender: " + gender);
     }
 
+    static {
+        System.out.println("inside Student's static block");
+    }
+
+
+
 }

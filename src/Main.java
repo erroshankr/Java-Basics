@@ -13,7 +13,7 @@ public class Main {
 
 
     //Entry point
-    public static void main(String[] args) {  //
+    public static void main(String[] args) {  // Main method can be overloaded but cant be over-ridden.
 
         //create an object
         // 1.using 'new' keyword without parameter
