@@ -1,4 +1,5 @@
 import com.java.encapsulation_1.EceStudent;
+import com.java.encapsulation_1.Student;
 import com.java.encapsulation_2.CseStudent;
 
 public class Main {
@@ -12,7 +13,7 @@ public class Main {
 
 
     //Entry point
-    public static void main(String[] args) {
+    public static void main(String[] args) {  //
 
         //create an object
         // 1.using 'new' keyword without parameter
@@ -124,10 +125,38 @@ public class Main {
         System.out.println(ece.age);
         System.out.println(ece.gender);*/
 
-        CseStudent c1 = new CseStudent("Rakesh",10001,21,"M");
+     //   CseStudent c1 = new CseStudent("Rakesh",10001,21,"M");
      //   System.out.println(c1.name);
       //  System.out.println(c1.id);
      //   System.out.println(c1.age);
      //   System.out.println(c1.gender);
+
+       /* Student s1 = new Student("Rakesh",10001,21,"M");
+        System.out.println(s1.getName());
+      //  System.out.println(s1.name);
+        s1.setName("Rohit");
+        System.out.println(s1.getName());*/
+
+      /*  Student s1 = new Student();
+        Student s2 = new Student();
+        Student s3 = s1;
+*/
+      /*  System.out.println(s1.hashCode());
+        System.out.println(s2.hashCode());
+
+        System.out.println(s1.getClass());
+        System.out.println(s2.getClass());
+        System.out.println(s3.hashCode());
+
+        System.out.println(s1 == s2);
+        System.out.println(s3 == s1);
+        System.out.println(s3 == s2);
+
+        s1.getName();
+        s2.getName();*/
+
+      /*  s3.setName("Rekha");
+        System.out.println(s1.getName());
+        System.out.println(s3.getName());*/
     }
 }

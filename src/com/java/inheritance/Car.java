@@ -30,7 +30,7 @@ package com.java.inheritance;
     }
 
 
-    public void findSpeed(int speed, String name){  // Method overloading -> return type , name
+    public void findSpeed(int speed, String name){  // Method overloading -> return type & name
         System.out.println("Inside findSpeed method of Car class");
         System.out.println("Speed of " + name + " is : " + speed);
     }

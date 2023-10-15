@@ -30,4 +30,12 @@ public class CseStudent extends Student {
         // CseStudent object is created outside com.java.encapsulation_1 but extends a class Student which is in com.java.encapsulation_1, so it
         // can access private, public & protected access specifiers but cant access default access specifier.
     }
+
+    // visibilty seq: private -> default -> protected -> public
+/*    @Override
+    public void displayDetails(){    // cant even be accessed bcoz being tried outside package
+        Student s1 = new Student("Rekha",1234,23,"F");
+        System.out.println("Name: " + s1.getName());
+        System.out.println("ID: " + s1.id);
+    }*/
 }
