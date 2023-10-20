@@ -1,6 +1,7 @@
 import com.java.encapsulation_1.EceStudent;
 import com.java.encapsulation_1.Student;
 import com.java.encapsulation_2.CseStudent;
+import com.java.staticdemo.StaticDemo;
 
 public class Main {
     //OOP: --> Abstraction, Encapsulation, Polymorphism, Inheritance
@@ -158,5 +159,12 @@ public class Main {
       /*  s3.setName("Rekha");
         System.out.println(s1.getName());
         System.out.println(s3.getName());*/
+
+        System.out.println(StaticDemo.salary);
+
+        StaticDemo s1 = new StaticDemo();
+        System.out.println(s1.salary);
+
+      //  StaticDemoJunior s2 = new StaticDemoJunior(); -> can not instantiate static class
     }
 }

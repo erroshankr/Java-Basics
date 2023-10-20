@@ -6,7 +6,7 @@ This small project contains code for live classes conducted to make participants
 Topics included:
 1. Object & Class : Done
 2. OOP Principles : Done
-3. Abstraction
+3. Abstraction : Done
 4. Encapsulation : Done
 5. Inheritance : Done
 6. Polymorphism : Done
