@@ -4,13 +4,13 @@ package com.java.final_demo;
 // extend: to change the behaviour of class.
 public final class Employee {
 
-    //final keyword is used to create constant value.
+    // final keyword is used to create constant value.
     // final variables can not be edited after 1st initialization.
     // We can not create/write setter method or any kind of method to alter its value.
     // Even through inheritance, final variables cant be modified.
     // final can be used with : variables, method, class, parameter, object
     // final methods can never be overridden.
-    //final classes can never be extended.(can not create its sub-class)
+    // final classes can never be extended.(can not create its sub-class)
 
     public final String companyName = "Wipro";
 
