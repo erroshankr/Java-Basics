@@ -35,4 +35,11 @@ public class Alto extends Car{
         System.out.println("Inside 3 arg constructor of Alto");
 
     }
+
+    public static void main(String[] args) {
+        Alto s1 ;
+             s1=   new Alto();
+
+             //Alto s1 = new Alto();
+    }
 }
