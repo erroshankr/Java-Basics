@@ -12,36 +12,15 @@ public class UnCheckedException {  // SQL Exception
         String subject = "English";
     //    System.out.println(subject.length());
 
-        subject = null; // null
+        subject = null ; // null
 
         // try : catch(1 or more) --> but exception handling control will enter into ONLY ONE catch block.
+        // finally block if present will be executed for sure.
 
         File file ;
         try {
-           // System.out.println(subject.length());  // Null pointer exception
+            System.out.println(subject.length());  // Null pointer exception
            // System.out.println(5/0);
-
-           String path = "/Users/sneha/Desktop";
-           String fileName = "demo.xlsx";
-           String filePath = path + File.separator + fileName;
-
-           /*try {
-               file = new File(filePath);
-           }catch (Exception e){
-               System.out.println("Directory doesnot exist");
-           }catch ()*/
-            file = new File(filePath);
-           if(file.createNewFile()){
-               System.out.println("File created successfully");
-           }else{
-               System.out.println("File already exists");
-           }
-            String data = "This is a new file";
-            FileOutputStream outputStream = new FileOutputStream(file);
-            outputStream.write(data.getBytes());
-
-           // FileInputStream inputStream = new FileInputStream(file);
-
 
         }
         catch (ArithmeticException r){ // Exception e = new NullPointerException();
