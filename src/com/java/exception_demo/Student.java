@@ -3,10 +3,23 @@ package com.java.exception_demo;
 public class Student {
 
     private String name;
+
+    public String fetchName(){
+        return this.name;
+    }
+
+    public void assignname(String name){
+        this.name = name;
+        // Student s1 == new Student()
+        // s1.displayDetails();
+        this.displayDetails(); // this == s1
+        new Student();
+    }
+
     private int studentID;
 
     public Student(){
-        
+        System.out.println("inside zero arg constructor");
     }
     public Student(String name, int studentID) {
         this.name = name;
