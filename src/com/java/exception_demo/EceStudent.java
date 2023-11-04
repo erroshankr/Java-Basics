@@ -2,6 +2,14 @@ package com.java.exception_demo;
 
 public class EceStudent extends Student{
 
+
+   /* public EceStudent(){
+        super();
+        System.out.println("inside EceStudent Constructor");
+
+    }*/
+
+
     @Override
     public void displayDetails() {
 

@@ -27,11 +27,28 @@ public class Student {
     }
     
     public void displayDetails() {
-        try {
-            System.out.println("Length of name" + name.length());
-            System.out.println("display details called"); // skipped in case of exception
-        }catch (NullPointerException e){
+        try { // to trace vulnerable code
+            throw new DemoException("Incorrect input , please provide correct inout");
+    //        throw new NullPointerException(); // throw--> used to forcefully create exception.
+    //        System.out.println("Length of name" + name.length());
+    //        System.out.println("display details called"); // skipped in case of exception
+        }catch (NullPointerException e1){  // to handle exception --> In case of exception, JVM creates/throws an object of specified exception class and then looks for its reference
+        //    NullPointerException obj = new NullPointerException();  --> JVM maps this reference internally
             System.out.println("Invalid Input");
+        }catch (DemoException e2) {
+            System.out.println("Demo Exception occurred");
+            try {
+                throw new DemoException("See I told u i m interesting");
+            } catch (DemoException e) {
+             //   System.out.println("Length of name" + name.length());
+                try {
+                    throw new RuntimeException(e);
+                }catch (Exception e3){
+                    System.out.println("Looks like I'm handled properly");
+                }
+            }
+        }finally {
+            System.out.println("I am in finally block");
         }
         System.out.println("I m normal");
     }
