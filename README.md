@@ -11,10 +11,10 @@ Topics included:
 5. Inheritance : Done
 6. Polymorphism : Done
 7. Interface : Done
-8. Exception Handling
-9. File Management
+8. Exception Handling : Done
+9. File Management : Done
 10. Collections API
-11. Wrapper Classes
+11. Wrapper Classes : Done
 12. Strings
 13. Garbage Collection
 14. Internationalization

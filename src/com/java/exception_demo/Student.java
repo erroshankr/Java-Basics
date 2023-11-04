@@ -1,5 +1,6 @@
 package com.java.exception_demo;
 
+// try, catch, throw, throw, finally
 public class Student {
 
     private String name;
