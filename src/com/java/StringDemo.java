@@ -39,5 +39,55 @@ public class StringDemo {
         System.out.println(s1.contains("has"));
         System.out.println(s1.endsWith("nss"));
 
+
+        System.out.println("**********************----------------******************");
+        String x = "            TajMahal             ";
+        try {
+            try {
+         //       System.out.println(x.charAt(8));
+            }catch (StringIndexOutOfBoundsException e){
+                System.out.println("Exception occurred");
+            }
+
+            char[] charAr = x.toCharArray();
+
+            for (int i = 0; i < charAr.length; i++) {
+                System.out.print(charAr[i] + ",");
+            }
+
+            System.out.println();
+            System.out.println(charAr.length);
+        //    System.out.println(charAr[8]);
+
+            System.out.println(x.toLowerCase());
+            System.out.println(x.toUpperCase());
+
+            System.out.println(x.trim()); // it removes leading & lagging spaces from the given string
+
+            System.out.println(x);
+
+            String x1 = "Tajmahal";
+            String y = "Victoria";
+            String z = "VictoriA";
+            System.out.println(z.equals(y));  // just checks the value
+            System.out.println(z.equalsIgnoreCase(y)); // ignores uppercase/ lowercase
+
+            System.out.println(y.compareTo(z) + "*******");
+            System.out.println(x1.compareTo(y));
+            System.out.println(y.compareTo(x1));
+
+            System.out.println('A' == 65);
+            System.out.println(Integer.toBinaryString(65));
+
+
+        }catch (StringIndexOutOfBoundsException e){
+            System.out.println("Exception occured while fetching character from String");
+        }catch (ArrayIndexOutOfBoundsException e){
+            System.out.println("Exception occurred while fetching unknown index from array");
+        }
+
+
+
+
     }
 }
