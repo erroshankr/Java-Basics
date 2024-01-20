@@ -34,17 +34,24 @@ public class MapDemo {
         m2.putIfAbsent(30,"Rajesh");
         System.out.println(m2.values());
 
+        // Ways of iteration through map
+        // 1st way: using entry-set having key in getKey() and value in getValue() method respectively.
         for (Map.Entry<Integer,String> e: m2.entrySet()) {
             System.out.println(e.getKey()+" "+e.getValue());
         }
 
+        // 2nd way: using key-set and fetching values through respective using get(key) method.
         for (Integer x: m2.keySet()) {
             System.out.println(x + " " + m2.get(x));
         }
 
+        // This is just to iterate through values, we can't get key from values uniqueness is not maintained in values.
         for (String s:m2.values()) {
             System.out.println(s);
         }
+
+        // 3rd way : using lambda function
+        m2.forEach((k,v) -> System.out.println("Key = " + k + ", Value = " + v));
 
         Map<Integer, List<String>> m3 = new HashMap<>();
         Map<Integer,Map<String,List<Integer>>> m4 = new HashMap<>();
