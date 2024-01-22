@@ -34,7 +34,7 @@ public class Solution4 {
        return count >=n;
     }
 
-    public static int compress(String[] chars) { // a:1, b:2 : ab2
+    public static int compress(String[] chars) { // a:1, b:2 : ab2 : List,Set,Map<k-v>: a:2
         Map<String,Integer> m1 = new HashMap<>();
         for (int i = 0; i < chars.length; i++) {
             if(!m1.containsKey(chars[i])){
@@ -56,6 +56,13 @@ public class Solution4 {
     public static void main(String[] args) {
         String[] ar = {"a","b","b","b","b","b","b","b","b","b","b","b","b"};
         System.out.println(compress(ar));
+        /* Class 3 : roll-Marks in all 3 sub
+                       1 : 20,23,35
+                       2 : 25,26,27
+            class 4 :  1 :24
+                        2:22
+               Map<Integer,Map<Integer,List<Integer>>> m1 = new Hashmap();
+         */
     }
 
 
