@@ -1,13 +1,13 @@
 package com.java.string;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
+import java.util.*;
 
 public class StringSet {
 
     public static void main(String[] args) {
-        minDelReqd("ABC","CAB");
+        //minDelReqd("ABC","CAB");
+       // printMaxMinWord("roshan");
+        removeDuplicateChar("vaibhav");
     }
 
     public static long modified(String a){
@@ -137,5 +137,32 @@ public class StringSet {
 
     // 56587jhgfjhvmvm678o7: Character.isDigit()  // Math.min
 
+    public static void printMaxMinWord(String s){ // This is my India, Max : India, Min: is , my --> lexicographically smallest
+         /*String[] arr = s.split(" ");
+         String max =arr[0];
+         String min = arr[0];
+        for (int i = 1; i < arr.length; i++) {
+            if(arr[i].length()> max.length()){
+                max = arr[i];
+            }
+            if(arr[i].length()< min.length()){
+                min = arr[i];
+            }
+        }
+        System.out.println(max + " & " + min);*/
 
+        System.out.println(String.valueOf(s.charAt(0)).toUpperCase() + s.substring(1));  // roshan : Roshan
+
+    }
+
+    // anupam :
+
+    public static void removeDuplicateChar(String str) { // try with normal loop without any inbuilt DS
+        char[] arr = str.toCharArray(); // roshan , vaibhav --> vaibh
+        Set<Character> set = new LinkedHashSet<>(); // no duplication but maintains insertion order
+        for (int i = 0; i < arr.length; i++) {
+            set.add(arr[i]);
+        }
+        System.out.println(set);
+    }
 }
