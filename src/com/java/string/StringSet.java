@@ -7,7 +7,8 @@ public class StringSet {
     public static void main(String[] args) {
         //minDelReqd("ABC","CAB");
        // printMaxMinWord("roshan");
-        removeDuplicateChar("vaibhav");
+       // removeDuplicateChar("vaibhav");
+        firstNonRepChar("vaibhav");
     }
 
     public static long modified(String a){
@@ -165,4 +166,25 @@ public class StringSet {
         }
         System.out.println(set);
     }
+
+    public static void firstNonRepChar(String s){ //vaibhav: v : 2,a:2,i=1,b=1,h=1
+        Map<Character,Integer> map = new LinkedHashMap<>();
+        for (int i = 0; i < s.length(); i++) {
+            if(map.containsKey(s.charAt(i))){
+                map.put(s.charAt(i), map.get(s.charAt(i))+1);
+            }else{
+                map.put(s.charAt(i),1);
+            }
+        }
+     //   System.out.println(map);
+        for (Map.Entry<Character,Integer> e:map.entrySet()) {
+            System.out.println(e.getKey() + " " + e.getValue());
+        }
+    }
 }
+
+
+/*
+1. array : size is predefined. {1,3,5,6,7}
+2. list : li.remove(3)
+ */
